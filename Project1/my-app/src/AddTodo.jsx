@@ -1,26 +1,26 @@
 import { useState } from "react";
 
-export const AddTodo = ({makeTodo}) => {
+export const AddTodo = ({makeNewTodo}) => {
 
     const [title, setTitle] = useState("");
 
-    const addNewTodo = (e) => {
+    const addNewTodo = () => {
         const newToDo = {
             id: new Date(),
             title: title,
             marked: false,
         }
-        e.preventDefault();
+        
         if (title) {
-            makeTodo(newToDo);
+            makeNewTodo(newToDo);
             setTitle("");
         }       
     }
 
     return (
-        <form onSubmit={addNewTodo}>
+        <form onSubmit={e=>e.preventDefault()}>
             <input type="text" placeholder="Add a new todo... " value={title} onChange={(e)=>{setTitle(e.target.value)}}/>
-            <button type="submit">Add</button>
+            <button onClick={addNewTodo}>Add</button>
         </form>
     )
 }

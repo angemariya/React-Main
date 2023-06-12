@@ -29,7 +29,7 @@ export const TodoListComponent = () => {
         <Todo 
         key={el.id} 
         {...el} 
-        deteledTodo={deletedTodo} 
+        deletedTodo={deletedTodo} 
         doneTodo={doneTodo}/>
       ))} 
       </div>
