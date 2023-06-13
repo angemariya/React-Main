@@ -1,0 +1,6 @@
+.employeesList {
+    margin: 100px 10vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px 150px;
+}
