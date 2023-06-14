@@ -6,6 +6,7 @@
 
 .image {
     border-radius: 50%;
+    border: 1px solid rgb(1, 182, 1);
     width: 100px;
     height: 100px;
 }
