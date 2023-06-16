@@ -1,0 +1,9 @@
+.formWrapper {
+    padding: 20px;
+    display: flex;
+    align-items: baseline;
+}
+
+.labelWrapper {
+    margin: 10px;
+}
