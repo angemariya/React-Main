@@ -1,11 +1,12 @@
-import './App.css';
-import { TodoListComponent } from './TodoListComponent';
+import { ItemList } from "./ItemList";
+import { Timer } from "./Timer";
 
 function App() {
   return (
-    <>
-    <TodoListComponent />
-    </>
+    <div >
+      <Timer />
+      <ItemList/>
+    </div>
   );
 }
 
